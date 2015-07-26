@@ -80,9 +80,9 @@ function MarkerLabel_(marker, crossURL, handCursorURL) {
   // Get the DIV for the "X" to be displayed when the marker is raised.
   this.crossDiv_ = MarkerLabel_.getSharedCross(crossURL);
 }
-
-inherits(MarkerLabel_, google.maps.OverlayView);
-
+if (typeof google !== 'undefined') {
+    inherits(MarkerLabel_, google.maps.OverlayView);
+}
 /**
  * Returns the DIV for the cross used when dragging a marker when the
  * raiseOnDrag parameter set to true. One cross is shared with all markers.
@@ -564,9 +564,9 @@ function MarkerWithLabel(opt_options) {
   // that the marker label listens for in order to react to state changes.
   google.maps.Marker.apply(this, arguments);
 }
-
-inherits(MarkerWithLabel, google.maps.Marker);
-
+if (typeof google !== 'undefined') {
+    inherits(MarkerWithLabel, google.maps.Marker);
+}
 /**
  * Overrides the standard Marker setMap function.
  * @param {Map} theMap The map to which the marker is to be added.
