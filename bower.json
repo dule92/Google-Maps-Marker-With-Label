@@ -1,0 +1,32 @@
+{
+  "name": "Google-Maps-Marker-With-Label",
+  "description": "Google maps marker with label plugin. Contains fix for undefined Google Map.",
+  "version": "1.1.11",
+  "main": [
+    "src/markerwithlabel.js"
+  ],
+  "repository": {
+      "type": "git",
+      "url": "git://github.com/Graffino/Google-Maps-Info-Box"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "keywords": [
+    "google",
+    "maps",
+    "plugin"
+  ],
+  "authors": [
+    "Graffino <hello@graffino.com>"
+  ],
+  "license": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
